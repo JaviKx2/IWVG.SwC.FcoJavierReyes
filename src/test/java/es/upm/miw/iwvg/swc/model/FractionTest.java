@@ -43,5 +43,32 @@ public class FractionTest {
     public void testDecimal() {
         assertEquals(1.6666, decimalFraction.decimal(), 10e-5);
     }
+    
+    @Test
+    public void testSumar(){
+    	Fraction f = new Fraction (1,2);
+    	assertEquals(22, integerFraction.sumar(f).getNumerator());
+    	assertEquals(4, integerFraction.sumar(f).getDenominator());
+    }
 
+    @Test
+    public void testRestar(){
+    	Fraction f = new Fraction (1,2);
+    	assertEquals(18, integerFraction.restar(f).getNumerator());
+    	assertEquals(4, integerFraction.restar(f).getDenominator());
+    }
+    
+    @Test
+    public void testMultiplicar(){
+    	Fraction f = new Fraction (1,2);
+    	assertEquals(10, integerFraction.multiplicar(f).getNumerator());
+    	assertEquals(4, integerFraction.multiplicar(f).getDenominator());
+    }
+    
+    @Test
+    public void testDividir(){
+    	Fraction f = new Fraction (1,2);
+    	assertEquals(20, integerFraction.dividir(f).getNumerator());
+    	assertEquals(2, integerFraction.dividir(f).getDenominator());
+    }
 }

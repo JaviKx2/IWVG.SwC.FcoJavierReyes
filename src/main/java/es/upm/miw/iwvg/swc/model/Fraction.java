@@ -60,4 +60,32 @@ public class Fraction {
         return (double) numerator / denominator;
     }
     
+    public Fraction sumar (Fraction f){
+    	Fraction aux = new Fraction();
+    	aux.numerator = this.numerator * f.denominator + this.denominator * f.numerator;
+    	aux.denominator = this.denominator * f.denominator;
+    	return aux;
+    }
+    
+    public Fraction restar (Fraction f){
+    	Fraction aux = new Fraction();
+        aux.numerator = this.numerator * f.denominator - this.denominator * f.numerator;
+        aux.denominator = this.denominator * f.denominator;
+        return aux;
+    }
+    
+    public Fraction multiplicar (Fraction f){
+    	Fraction aux = new Fraction();
+    	aux.numerator = this.numerator * f.numerator;
+    	aux.denominator = this.denominator * f.denominator;
+    	return aux;
+    }
+    
+    public Fraction dividir (Fraction f){
+    	Fraction aux = new Fraction();
+    	aux.numerator = this.numerator * f.denominator;
+    	aux.denominator = this.denominator * f.numerator;
+    	return aux;
+    }
+    
 }
