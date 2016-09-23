@@ -71,4 +71,14 @@ public class FractionTest {
     	assertEquals(20, integerFraction.dividir(f).getNumerator());
     	assertEquals(2, integerFraction.dividir(f).getDenominator());
     }
+    
+    @Test
+    public void testIsPropia() {
+        assertEquals(false, integerFraction.isPropia());
+    }
+    
+    @Test
+    public void testIsImpropia() {
+        assertEquals(true, integerFraction.isImpropia());
+    }
 }
