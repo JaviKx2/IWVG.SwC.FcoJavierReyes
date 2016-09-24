@@ -81,4 +81,15 @@ public class FractionTest {
     public void testIsImpropia() {
         assertEquals(true, integerFraction.isImpropia());
     }
+    
+    @Test
+    public void testIsEquivalent() {
+    	// Success case
+    	Fraction f = new Fraction(20, 4);
+    	assertEquals(true, integerFraction.isEquivalent(f));
+    	
+    	// Fail case
+    	Fraction f1 = new Fraction(4, 20);
+    	assertEquals(false, integerFraction.isEquivalent(f1)); 
+    }
 }
