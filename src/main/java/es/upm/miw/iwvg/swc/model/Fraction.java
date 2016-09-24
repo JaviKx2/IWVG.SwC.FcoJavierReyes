@@ -95,9 +95,9 @@ public class Fraction {
     }
     
     public boolean isImpropia() {
-        if(this.numerator > this.denominator)
-            return true;
-        else return false;
+        if(this.numerator < this.denominator)
+            return false;
+        else return true;
     }
     
     public boolean isEquivalent(Fraction f) {
