@@ -80,6 +80,8 @@ public class FractionTest {
     @Test
     public void testIsImpropia() {
         assertEquals(true, integerFraction.isImpropia());
+        integerFraction = new Fraction(2, 2);
+        assertEquals(true, integerFraction.isImpropia());
     }
     
     @Test
