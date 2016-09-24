@@ -100,4 +100,15 @@ public class Fraction {
         else return false;
     }
     
+    public boolean isEquivalent(Fraction f) {
+    	int x = this.numerator * f.getDenominator();
+    	int y = this.denominator * f.getNumerator();
+    	
+    	if (x == y) {
+        	return true;    		
+    	} else {
+        	return false;
+    	}
+
+    }
 }
