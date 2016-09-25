@@ -2,6 +2,7 @@
 Tarea de Ingeniería Web : Visión General -  Software Colaborativo
 
 # Equipo
+
 ## Arquitecto
 - Francisco Javier Reyes Mangas
 
