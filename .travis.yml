@@ -9,8 +9,6 @@ branches:
     - develop
     
 notifications:
-  email:
-    recipients:
-      - javier.reyes.mangas@alumnos.upm.es
-    webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
+  webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
+ 
 script: mvn verify
